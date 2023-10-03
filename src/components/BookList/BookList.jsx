@@ -21,7 +21,7 @@ const BooksList = () => {
 
   return (
     <div>
-      <h1>{books.length}</h1>
+      <h1 className={styles.booksLength}>Books released: {books.length}</h1>
       <div className={styles.Block}>
         {currentBooks.length > 0 ? (
           currentBooks.map((book) => (
