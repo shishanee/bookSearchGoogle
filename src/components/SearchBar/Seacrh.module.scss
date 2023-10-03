@@ -1,0 +1,63 @@
+.Block {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .Seacrh {
+      position: relative;
+      .input {
+          width: 150px;
+          padding: 10px 0px 10px 40px;
+          border-radius: 9999px;
+          border: solid 1px #333;
+          transition: all 0.2s ease-in-out;
+          outline: none;
+          opacity: 0.8;
+          &:focus {
+              opacity: 1;
+              width: 240px;
+          }
+      }
+      img {
+          position: absolute;
+          width: 23px;
+          top: 50%;
+          left: 10px;
+          transform: translate(0, -50%);
+      }
+  }
+  .Select {
+      display: flex;
+      margin-top: 13px;
+      @media (max-width: 500px) {
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+      }
+      select {
+          padding: 5px;
+          border-radius: 8px;
+          &:nth-child(2) {
+              margin: 0 20px;
+          }
+          &:nth-child(4) {
+              margin: 0 20px;
+          }
+          @media (max-width: 500px) {
+              &:nth-child(2) {
+                  margin: 5px 0;
+              }
+              &:nth-child(4) {
+                  margin: 5px 0;
+              }
+          }
+          option {
+              display: flex;
+              background: blanchedalmond;
+              border-radius: 20px;
+          }
+      }
+  }
+}
