@@ -1,15 +1,15 @@
-.Header{
+.Header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 0 0 40px 0;
-  background: rgb(5, 184, 175);
+  background: rgb(30, 165, 159);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  .Title{
-      @media  (max-width: 500px) {
-          font-size: 25px;
-      }
+  .Title {
+    @media (max-width: 500px) {
+      font-size: 25px;
+    }
   }
 }
